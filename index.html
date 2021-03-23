@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
+  <div class="main-box box">
+  <div class="webgl-content">
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
@@ -25,6 +27,21 @@
         <div id="unity-build-title">LifeGameGO_Test</div>
       </div>
     </div>
+    </div>
+    <div>
+	<div class="side-box box">
+【ライフゲーム囲碁】<BR>
+ライフゲームの要素を取り入れた囲碁っぽいゲームです。<BR>
+<BR>
+◎ルール<BR>
+１．碁石と碁盤を使う<BR>
+２．黒白交互に着手する<BR>
+３．８方向に隣接する点に相手の石が３つ以上ある点には着手できない<BR>
+４．相手の石の周りに自分の石を３つ以上置けば相手の石を取ることができる<BR>
+５．ルール３はルール４より優先される<BR>
+６．白黒とも着手できる点がなくなったら終局。<BR>
+７．終局時、盤上の石数が多いほうが勝ち。ただしコミは６．５とする。アゲハマはポイントとして計算されない。<BR>
+</div>
     <script>
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/LifeGameGoWebGL.loader.js";
@@ -74,16 +91,5 @@
       };
       document.body.appendChild(script);
     </script>
-    【ライフゲーム囲碁】<BR>
-ライフゲームの要素を取り入れた囲碁っぽいゲームです。<BR>
-<BR>
-◎ルール<BR>
-１．碁石と碁盤を使う<BR>
-２．黒白交互に着手する<BR>
-３．８方向に隣接する点に相手の石が３つ以上ある点には着手できない<BR>
-４．相手の石の周りに自分の石を３つ以上置けば相手の石を取ることができる<BR>
-５．ルール３はルール４より優先される<BR>
-６．白黒とも着手できる点がなくなったら終局。<BR>
-７．終局時、盤上の石数が多いほうが勝ち。ただしコミは６．５とする。アゲハマはポイントとして計算されない。<BR>
   </body>
 </html>
